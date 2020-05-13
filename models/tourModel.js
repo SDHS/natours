@@ -202,12 +202,12 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 // populate() populates the document by using the references contained within the field that we have specified and then using the reference to display all the related data of that reference. This happens only in the query and not in the actual database. So, our tour and user collections remain separate in the database.
-tourSchema.post(/^find/, function (documents, next) {
-  console.log(`Query took ${Date.now() - this.start} milliseconds.`);
-  // here we get access to all the documents that were returned from the query.
-  //console.log(documents);
-  next();
-});
+// tourSchema.post(/^find/, function (documents, next) {
+//   console.log(`Query took ${Date.now() - this.start} milliseconds.`);
+//   // here we get access to all the documents that were returned from the query.
+//   //console.log(documents);
+//   next();
+// });
 
 // AGGREGATION MIDDLEWARE
 // tourSchema.pre('aggregate', function (next) {
