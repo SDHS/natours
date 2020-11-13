@@ -1,3 +1,3 @@
 # Natours Application
 
-Built using modern technologies: node.js, express, mongoDB, mongoose, and friends.
+A webapp for a tour company, made after following Jonas Schmedtmann's excellent Udemy Node.js course.
